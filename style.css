@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    /* background-color:pink; Fondo color */
+    background-image: url(img/galaxia.jpg);
+    font-size: 1.25rem; /* Extensión px a rem >> px to rem, y usas Alt + z */
+    /* background-size: cover; o 100% 100% permite estirar la imagen sin dañarla */
+    /* background-repeat: no-repeat; cuando la imagen es pequeña, para que no se repita en el fondo */
+    background-attachment: fixed; /* Deja la imagen estática */
+    /* prefijos
+    -webkit-background-size:cover;
+    prefijo-chrome - internet explorer
+    -moz-background-size:cover; mozilla
+    -o-background-size:cover; opera---- para background-size:cover; */
+
+}
+
+/* h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    color: teal;
+} */
+
+/* div ~ li{
+
+} */
+
+div#menu{
+    background: indianred;
+    width: 60%;
+    max-width: 56.25em;
+    font-size: 1.56em; /* para sacar em, tomas los pixeles y los divides en 16 */
+    /* margin: 20px 34px 20px 38px; conmo las manecillas del reloj */
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+div#menu a{
+    text-decoration: none;     /* Quita la línea de los hipervinculos */
+    padding: 25px;
+}
+
+/* Cuando ya visitaste el link */
+div#menu a:link{
+    color:rgb(185, 143, 212);
+}
+
+
+div#menu a:visited{
+    color: white;
+}
+
+/* Cuando pasamos el mouse al link */
+div#menu a:hover{
+    text-decoration: underline;
+}
+
+/* seleccionar el link */
+div#menu a:active{
+    color: rgb(70, 15, 29);
+}
+
+.contenedor{
+    background: rgba(154, 139, 170, 0.5);
+    width: 60%;
+    max-width: 53.25rem;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: justify;
+    font-family: corbel;
+    color: #1f1d1d;
+}
+
+.contenedor h1{
+    padding: 107px 35px 70px 60px;
+    color: teal;
+    font-family: cursive;
+    font-size: 40px;
+    /* font-weight: bolder;
+    negrita */
+}
+
+.tituloImagen{
+    display: inline-flex;
+    width: 100%;
+}
+
+.imagen{
+    width: 80%;
+}
+
+.imagen img{
+    width: 100%;
+    border-radius: 20px;
+    /* Borde redondeado a la imagen en las esquinas */
+}
+
+div.seccion2{
+    width: 100%;
+    background-color:rgba(123, 102, 146, 0.5);
+    position: relative;
+    top: 45px;
+    font-size: 20px;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    /* Ajusta el relleno (padding) y el borde al tamaño del contenido" */
+    /* nos permite incluir el relleno y el borde en el ancho y alto de un elemento  */
+}
+
+div.seccion2 img{
+    width: 200px;
+    position: absolute; 
+    bottom: -200px;
+    right: 35px;
+}
+
+p.fixed{
+    font-size: 18px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+    width: 160px;
+    background-color: rgba(205, 92, 92, 0.795);
+    border-radius: 50px;
+}
+
+.ingredientes{
+    height: 480px;
+    margin-top: 150px;
+    overflow: scroll;
+}
+
+.ingredientes h2{
+    padding: 0px 35px 50px 10px;
+    color: Teal;
+    font-family: cursive;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+.ingredientes p {
+    font-size: 20px;
+    white-space: pre-wrap;
+    /* emplea para determinar la forma en que el navegador tomará los espacios en blanco y los saltos de línea */
+}
+
+.ingredientes span{
+color: teal;
+font-size: 600;
+
+}
+
+p.sti{
+    font-size: 18px;
+    position: sticky;
+    bottom: 20px;
+    left: -20px;
+    display: inline-flex;
+    
+   
+}
+
+.indicaciones tr, td{
+    border: 2px solid black;
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 760px;
+    height: 350px;
+    font-family: cursive;
+    background-color: rgba(123, 102, 146, 0.5);
+}
+
+table span{
+    background-color: rgba(205, 92, 92, 0.795);
+    border-radius: 50px 50px;
+}
+
+caption {
+    text-align: center;
+    color: teal;
+    font-size: 28px;
+    font-family: cursive;
+}
